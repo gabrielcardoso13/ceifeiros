@@ -25,3 +25,13 @@ function toggleMenu() {
     const menu = document.querySelector('nav ul');
     menu.classList.toggle('active');
 }
+
+// Exemplo simples de interação, como um efeito de hover ou algo semelhante
+document.querySelectorAll('.curso').forEach(curso => {
+    curso.addEventListener('mouseover', () => {
+        curso.style.transform = 'scale(1.05)';
+    });
+    curso.addEventListener('mouseout', () => {
+        curso.style.transform = 'scale(1)';
+    });
+});
