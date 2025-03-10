@@ -97,7 +97,7 @@ button:hover {
 }
 
 /* Responsividade para telas menores */
-@media () {
+@media (max-width: 1920px) {
   .carrossel img {
     height: auto;  /* Para ajustar a altura automaticamente conforme a largura da tela */
   }
