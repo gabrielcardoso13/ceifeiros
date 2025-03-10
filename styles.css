@@ -21,7 +21,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: center; /* Ajuste para que a logo fique à esquerda e o menu à direita */
+  justify-content: space-around; /* Ajuste para que a logo fique à esquerda e o menu à direita */
   position: relative;
 }
 
