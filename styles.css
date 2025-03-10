@@ -73,6 +73,8 @@ nav ul li a:hover {
 
 .carrossel img {
   width: 100%;
+  object-fit: cover;  /* Ajusta a imagem para preencher o espaço sem distorção */
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -136,5 +138,9 @@ button:hover {
 
   .carrossel-container {
     margin-top: 150px;  /* Aumenta o espaço acima do carrossel para não sobrepor o menu hamburguer */
+  }
+
+  .carrossel img {
+    object-fit: contain; /* Ajusta a imagem para não cortar nas telas pequenas */
   }
 }
