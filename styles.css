@@ -26,7 +26,7 @@ nav {
 }
 
 .logo {
- 
+  position: relative;
   height: 90px; /* Ajuste conforme necessário */
   margin-right: 20px;
 }
