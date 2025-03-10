@@ -46,25 +46,32 @@ header {
 nav {
   display: flex;
   align-items: center;
-  align: center;
-  justify-content: space-between;
+  justify-content: center; /* Centraliza os itens do menu */
+  position: relative; /* Para posicionar a logo à esquerda */
+}
+
+.logo {
+  position: absolute;
+  left: 20px; /* Ajuste conforme necessário */
+  height: 50px;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 10px;
+  display: flex;
+  gap: 20px; /* Espaço entre os itens do menu */
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
 }
-.logo {
-  height: 150px; /* Ajuste conforme necessário */
-  margin-right: 20px;
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
+
