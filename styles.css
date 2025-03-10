@@ -1,3 +1,4 @@
+/* Estilos do Header */
 header {
   background-color: #333;
   color: #fff;
@@ -17,16 +18,14 @@ body {
 }
 
 /* Menu */
-
 nav {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza os itens do menu */
-  position: relative; /* Para posicionar a logo à esquerda */
+  justify-content: space-between; /* Ajuste para que a logo fique à esquerda e o menu à direita */
+  position: relative;
 }
 
 .logo {
-  position: relative;
   height: 90px; /* Ajuste conforme necessário */
   margin-right: 20px;
 }
@@ -50,9 +49,15 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Ícone do Menu Hamburguer - Escondido por padrão */
+.menu-hamburguer {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
 
 /* Banner Carrossel */
-
 .carrossel-container {
   position: relative;
   width: 100%;
@@ -98,7 +103,38 @@ button:hover {
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
-  .carrossel img {
-    height: auto;  /* Para ajustar a altura automaticamente conforme a largura da tela */
+  nav ul {
+    display: none;  /* Esconde o menu normal em telas pequenas */
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    flex-direction: column; /* Coloca os itens do menu na vertical */
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px;
+  }
+
+  /* Exibe o menu hamburguer em telas pequenas */
+  .menu-hamburguer {
+    display: block;
+  }
+
+  /* Exibe o menu quando for ativado */
+  nav ul.active {
+    display: block;
+  }
+
+  .carrossel-container {
+    margin-top: 150px;  /* Aumenta o espaço acima do carrossel para não sobrepor o menu hamburguer */
   }
 }
