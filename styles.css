@@ -13,20 +13,6 @@ header {
   text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
 
 /* Carrossel */
 .carousel-container {
@@ -59,7 +45,7 @@ nav ul li a {
 
 nav {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: space-between;
 }
 
