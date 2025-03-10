@@ -20,7 +20,7 @@ setInterval(autoMover, 3000);
 
 // script.js
 
-// Função para alternar o menu
+// script.js
 function toggleMenu() {
     const menu = document.querySelector('nav ul');
     menu.classList.toggle('active');
