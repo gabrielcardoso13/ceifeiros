@@ -63,7 +63,7 @@ nav ul li a:hover {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  margin-top: 60px; /* Para garantir que o carrossel não fique abaixo do menu fixo */
+  margin-top: 50px; /* Para garantir que o carrossel não fique abaixo do menu fixo */
 }
 
 .carrossel {
