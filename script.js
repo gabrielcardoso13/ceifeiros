@@ -17,3 +17,11 @@ function autoMover() {
 
 // Chama a função autoMover a cada 3 segundos (3000ms)
 setInterval(autoMover, 3000);
+
+// script.js
+
+// Função para alternar o menu
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('active');
+}
