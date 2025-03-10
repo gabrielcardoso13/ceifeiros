@@ -46,6 +46,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  align: center;
   justify-content: space-between;
 }
 
