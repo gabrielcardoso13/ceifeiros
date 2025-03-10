@@ -102,7 +102,7 @@ button:hover {
 }
 
 /* Responsividade para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   nav ul {
     display: none;  /* Esconde o menu normal em telas pequenas */
     width: 100%;
