@@ -16,7 +16,7 @@ function autoMover() {
 }
 
 // Chama a função autoMover a cada 3 segundos (3000ms)
-setInterval(autoMover, 3000);
+setInterval(autoMover, 5000);
 
 // script.js
 
