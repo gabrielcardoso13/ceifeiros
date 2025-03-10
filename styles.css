@@ -51,9 +51,8 @@ nav {
 }
 
 .logo {
-  position: absolute;
-  left: 20px; /* Ajuste conforme necessário */
-  height: 150px;
+  height: 150px; /* Ajuste conforme necessário */
+  margin-right: 20px;
 }
 
 nav ul {
