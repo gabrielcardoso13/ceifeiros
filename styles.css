@@ -72,7 +72,7 @@ nav ul li a:hover {
 }
 
 .carrossel img {
-  width: 100%;
+  width: 80%;
   object-fit: cover;  /* Ajusta a imagem para preencher o espaço sem distorção */
   height: 40%;
   border-radius: 8px;
