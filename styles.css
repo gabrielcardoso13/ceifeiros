@@ -71,11 +71,21 @@ nav ul li a:hover {
   transition: transform 0.5s ease;
 }
 
+.carrossel-item {
+  width: 100%;
+}
+
 .carrossel img {
   width: 100%;
   object-fit: cover;  /* Ajusta a imagem para preencher o espaço sem distorção */
   height: 40%;
   border-radius: 8px;
+}
+
+/* Torna a imagem do carrossel clicável */
+.carrossel-item a {
+  display: block;  /* Faz o link ocupar toda a área da imagem */
+  text-decoration: none;  /* Remove o sublinhado do link */
 }
 
 button {
