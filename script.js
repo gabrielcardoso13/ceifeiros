@@ -9,3 +9,11 @@ function mover(direction) {
     index = (index + direction + totalImagens) % totalImagens;
     carrossel.style.transform = `translateX(-${index * 100}%)`;
 }
+
+// Função para mover automaticamente
+function autoMover() {
+    mover(1);  // Move para a próxima imagem
+}
+
+// Chama a função autoMover a cada 3 segundos (3000ms)
+setInterval(autoMover, 3000);
