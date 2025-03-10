@@ -62,7 +62,7 @@ nav ul li a:hover {
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* Esconde as imagens que não estão visíveis */
   margin-top: 65px; /* Para garantir que o carrossel não fique abaixo do menu fixo */
 }
 
@@ -72,13 +72,13 @@ nav ul li a:hover {
 }
 
 .carrossel-item {
-  width: 100%;  /* Cada item ocupará 100% da largura do carrossel */
+  min-width: 100%;  /* Garante que cada imagem ocupe 100% da largura do carrossel */
 }
 
 .carrossel img {
   width: 100%;
   object-fit: cover;  /* Ajusta a imagem para preencher o espaço sem distorção */
-  height: 100%;  /* Ajuste a altura para cobrir todo o espaço do carrossel */
+  height: 100%;  /* Ajusta a altura para cobrir todo o espaço do carrossel */
   border-radius: 8px;
 }
 
