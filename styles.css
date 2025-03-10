@@ -1,16 +1,20 @@
 /* Estilos básicos */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
-
 header {
   background-color: #333;
   color: #fff;
   padding: 10px;
   text-align: center;
+  position: fixed;  /* Torna o menu fixo no topo */
+  top: 0;
+  width: 100%;
+  z-index: 1000;  /* Garante que o menu fique acima dos outros elementos */
+}
+
+body {
+  margin: 0;
+  padding-top: 70px;  /* Espaço para o menu fixo não cobrir o conteúdo */
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
 }
 
 
