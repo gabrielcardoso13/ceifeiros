@@ -1,4 +1,3 @@
-/* Estilos básicos */
 header {
   background-color: #333;
   color: #fff;
@@ -17,35 +16,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
-/* Carrossel */
-.carousel-container {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide img {
-  width: 100%;
-  display: block;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
+/* Menu */
 
 nav {
   display: flex;
@@ -79,3 +50,55 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+
+/* Banner Carrossel */
+
+.carrossel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 70px; /* Para garantir que o carrossel não fique abaixo do menu fixo */
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrossel img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .carrossel img {
+    height: auto;  /* Para ajustar a altura automaticamente conforme a largura da tela */
+  }
+}
