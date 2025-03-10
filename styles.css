@@ -49,6 +49,20 @@ nav {
   justify-content: space-between;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 .logo {
   height: 150px; /* Ajuste conforme necessário */
   margin-right: 20px;
